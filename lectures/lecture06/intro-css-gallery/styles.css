@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+   
+    background-color: rgb(233, 213, 62);
+     padding:40px;
+         
+}
+main {
+    background-color: rgb(201, 197, 193);
+    
+    /* padding: 20px;
+    width: 300px; */
+    section {
+        
+        display: inline-block;
+        text-align: center;
+        margin:20px;
+        img{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto ;
+        }
+        background-color: white;
+        
+    }
+    section:hover {
+        transform: scale(1.5)
+        rotate(360deg);
+        opacity: 1;    
+    }
+    
+}
+
+/* Your code here */
