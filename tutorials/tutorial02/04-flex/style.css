@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: aliceblue;
+
+}
+main {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+section {
+height: 100vh;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+text-align: center;
+background-size: cover;
+width:100%;
+
+}
+h2 {
+    display: flex;
+    justify-content: space-around;
+  
+}
+#home {
+    background-color: rgb(115, 169, 169);
+    
+}
+#bio {
+    background-color: rgb(104, 104, 193);
+}
+#portfolio {
+    background-color: rgb(165, 94, 231);
+}
+#contact {
+    background-color: rgb(118, 54, 150);
+}
+
+
+/* create additional rules below:  */

@@ -21,6 +21,19 @@ nav,
     padding: 10px;
 }
 
+header {
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: white;
+    opacity: 0.95;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
 aside,
 body>header,
 main {

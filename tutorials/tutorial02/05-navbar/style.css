@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+nav {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    border: groove 2px #555;
+    justify-content:space-between;
+    
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+nav ul {
+    
+    
+    display: flex;
+    padding: 5px;
+    list-style-type: none;
+
+    gap: 20px;
+    border: groove 2px #444;
+    
+}
+nav ul li {
+    border: groove 2px #444;
+    padding: 6px;
+    margin: 2px;
+    display: inline-block;
+    
+}
+a {
+    border: groove 2px #444;
+    padding: 2px;
+    margin: 2px;
+}
