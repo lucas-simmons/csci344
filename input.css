@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+body {
+   background-color: antiquewhite;
+   margin: 0;
+   padding: 0;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+
+}  
+.basic {
+    /* text-align:left; */
+    margin: 20px;
+    height: fit-content;
+    width: fit-content;
+
+}
+h1 {
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 80px;
+    background-color: rgb(7, 83, 30);
+    margin: 0;
+    
+    color: #bdbdbd;
+}
