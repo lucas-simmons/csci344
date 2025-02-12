@@ -35,5 +35,11 @@ main,
 
 /* End Debugging Code */
 
+header {
+    display: sticky;
+    top: 0;
+    left: 0;
+    background-color: #CCC;
+}
 
 @media (max-width: 800px) {}
