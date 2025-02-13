@@ -333,7 +333,7 @@ main {
 
 .stories-panel {
     min-height: 100px;
-    margin-bottom: px;
+    margin-bottom: 30px;
     display: flex;
     gap: 10px;
     background-color: white;
