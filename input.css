@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+body * {
+    border: solid 1px black;
+}
 a {
     color: blue;
     text-decoration: underline;
@@ -25,8 +27,24 @@ body {
     justify-content: center;
     display: flex;
     height: 80px;
+    background-color: rgb(132, 132, 210);
     background-color: rgb(7, 83, 30);
     margin: 0;
     
     color: #bdbdbd;
 }
+.main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 100%;
+
+}
+#tutorials {
+    display: grid;
+    grid-column: 1 / span 1;
+}
+#homework {
+    display: grid;
+    grid-column: 2 / span 1;
+}
+
