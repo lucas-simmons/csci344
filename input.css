@@ -1,4 +1,8 @@
 
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
 a {
     color: blue;
     text-decoration: underline;
@@ -10,24 +14,31 @@ body {
    padding: 0;
    font-family:Georgia, 'Times New Roman', Times, serif;
 }  
-
+h2 {
+    border: 2px solid rgb(122, 121, 121);
+    height: fit-content;
+    border-radius: 10%;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+}
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-size: x-large;
     height: 80px;
-    background-color: rgb(7, 83, 30);
+    background-color: rgb(19, 94, 42);
 
-    color: #bdbdbd;
+    color: #ededed;
 }
 main {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    height: 100%;
     
+    font-size: large;
     
-    padding: 15px;
+    padding: 20px;
     margin: 10px;
     background-color: #bdbdbd;
     border-radius: 5% 5% 5% 5%;
@@ -35,6 +46,7 @@ main {
 #tutorials {
     display: grid;
     grid-column: 1 / 2;
+    
 }
 #homework {
     display: grid;
@@ -43,6 +55,7 @@ main {
 #quizzes {
     display: grid;
     grid-column: 3 / 4;
+    
 }
 #gh {
     display: grid;
