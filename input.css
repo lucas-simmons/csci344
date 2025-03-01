@@ -1,6 +1,4 @@
-body * {
-    /* border: solid 1px black; */
-}
+
 a {
     color: blue;
     text-decoration: underline;
@@ -11,36 +9,44 @@ body {
    margin: 0;
    padding: 0;
    font-family:Georgia, 'Times New Roman', Times, serif;
-
 }  
-.basic {
-    /* text-align:left; */
-    margin: 20px;
-    height: fit-content;
-    width: fit-content;
 
-}
 header {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
+
     height: 80px;
     background-color: rgb(7, 83, 30);
-    margin: 0;
-    
+
     color: #bdbdbd;
 }
 main {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 100%;
-    width: 100%;
+    
+    
+    padding: 15px;
     margin: 10px;
-    margin-top: 0;
+    background-color: #bdbdbd;
+    border-radius: 5% 5% 5% 5%;
 }
 #tutorials {
     display: grid;
     grid-column: 1 / 2;
+}
+#homework {
+    display: grid;
+    grid-column: 2 / 3;
+}
+#quizzes {
+    display: grid;
+    grid-column: 3 / 4;
+}
+#gh {
+    display: grid;
+    grid-column: 4 / 4;
 }
 
 
