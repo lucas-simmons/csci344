@@ -1,4 +1,4 @@
-import "./Profile.css";
+import "./Profiles.css";
 import React from "react";
 
 export default function Profile() {
