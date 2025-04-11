@@ -9,13 +9,22 @@ a {
 }
 
 body {
-    background-color: rgb(47, 76, 129);
+    background: linear-gradient(to right, rgb(244, 99, 99), rgba(0, 204, 255, 0.8));
 
    margin: 0;
    padding: 0;
-}  
+} 
+
+h1 {
+    height: fit-content;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
 h2 {
-    border: 2px solid rgb(122, 121, 121);
     height: fit-content;
     border-radius: 10%;
     margin: 5px;
@@ -28,9 +37,9 @@ header {
     justify-content: center;
     font-size: x-large;
     height: 80px;
-    background-color: rgb(47, 76, 129);
+    margin: 10px;
 
-    color: #ede4e4;
+    /* color: #2f2f2f; */
 }
 main {
     display: grid;
@@ -45,43 +54,37 @@ main {
 #tutorials {
     display: grid;
     grid-column: 1 / 2;
-    border: 2px solid rgb(122, 121, 121);
-    padding: 5px;
+    
+    padding: 10px;
     margin: 5px;
     border-radius: 5%;
-    background-color: #bdbdbd;
-    box-shadow: 5px black;
+    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 #homework {
     display: grid;
     grid-column: 2 / 3;
-    border: 2px solid rgb(122, 121, 121);
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border-radius: 5%;
-    background-color: #bdbdbd;
-
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 #quizzes {
     display: grid;
     grid-column: 3 / 4;
-    border: 2px solid rgb(122, 121, 121);
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border-radius: 5%;
-    background-color: #bdbdbd;
-
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 #gh {
     display: grid;
     grid-column: 4 / 4;
-    border: 2px solid rgb(122, 121, 121);
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border-radius: 5%;
-    background-color: #bdbdbd;
-
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 
