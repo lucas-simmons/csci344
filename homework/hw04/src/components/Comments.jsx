@@ -20,7 +20,7 @@ export default function Comments({postId}) {
           template = <div className="">
             {renderComment(postId[0])}
             
-            <button className="link text-sm text-sky-700">View all {
+            <button className="link text-sm text-sky-800">View all {
                 postId.length
             } comments</button>
             </div>

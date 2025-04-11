@@ -33,7 +33,7 @@ export default function Post({postData, token}) {
                     </p>
                 </div>
                 <Comments postId={postData.comments} />
-                <p className="uppercase text-gray-500 text-xs">{postData.display_time}</p>
+                <p className="uppercase text-gray-700 text-xs">{postData.display_time}</p>
         </div>
         
         </section>
