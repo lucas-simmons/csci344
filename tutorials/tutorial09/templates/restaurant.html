@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Top Restaurant</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
-">
-    <link rel="stylesheet" href="/static/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Restaurant</title>
-</head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Restaurant</title>
+  </head>
+
+  <body>
     {% include 'includes/header.html' %}
 
-    <main>
+    <main >
         <p>Search location: {{location}}</p>
         <p>Search term: {{search_term or 'None Specified'}}</p>
-        <p>Data: {{ restaurant }}</p>
+        
         <h2>Top Restaurant:</h2>
-        <p>Name: {{ restaurant.get('name') }}</p>
+        <section class="box">
+            <h3>{{ restaurant.get('name') }}</h3>
+            <img src={{ restaurant.get('image_url') }} alt="">
+            <section class="details" >
+            <p>Rating: {{ restaurant.get('rating') }} stars   |   Reviews: {{ restaurant.get('review_count') }}</p>
+            <p>Price: {{ restaurant.get('price') }}</p>
+            <p>Address: {{ restaurant.get('display_address') }}</p>
+            </section>
+        </section>
     </main>
-</body>
-
+  </body>
 </html>

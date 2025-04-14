@@ -38,6 +38,7 @@ def home():
                 <li>Exercise 6: <a href="/ui/all-restaurants/?location=Asheville+NC&term=thai">/ui/all-restaurants/?location=Asheville+NC&term=thai</a> (5pts Extra Credit)</li>
             </ul>
         </body>
+        </html>
         '''
 
 ##############################
@@ -58,7 +59,7 @@ def exercise2():
     with open('data.json') as f:
         data = json.load(f)
     print(data)
-    return json.dumps({})
+    return json.dumps(data)
     
 
 
@@ -79,15 +80,20 @@ e.g., http://127.0.0.1:5000/yelp-proxy/location=NY,%20NY&term=chinese&count=3
 @app.route('/data/yelp/')
 @app.route('/data/yelp')
 def exercise3():
-    search_term = 'pizza'
-    location = 'Asheville, NC'
+    search_term =request.args.get('term')
+    location = request.args.get('location')
     count = 10
+    if location is None or search_term is None:
+        return ("Enter both a location and search term.")
+       
     # go fetch data from another server and give it to the requestor:
     base_url = 'https://www.apitutor.org/yelp/simple/v3/businesses/search'
     url = f'{base_url}?location={location}&term={search_term}&limit={count}'
     response = requests.get(url)
     data = response.json()
     return json.dumps(data)
+    
+    
 
 
 
@@ -95,6 +101,7 @@ def exercise3():
 # Exercise 4: Merge data with a template (server-side templating) #
 ###################################################################
 @app.route('/ui/quote')
+
 def exercise4():
     import json
     with open('data.json') as f:
@@ -102,7 +109,8 @@ def exercise4():
     print(quotes)
     return render_template(
         'quote-of-the-day.html',
-        user=current_user
+        user=current_user,
+        random_quote=random.choice(quotes)
     )
 
 
@@ -130,7 +138,9 @@ def exercise5():
         user=current_user,
         search_term=search_term,
         location=location,
-        restaurant=restaurants[0]
+        restaurant=restaurants[0],
+        image_url=restaurants[0]['image_url']
+        
     )
 
 
